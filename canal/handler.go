@@ -24,7 +24,7 @@ type DummyEventHandler struct {
 }
 
 func (h *DummyEventHandler) OnRotate(*replication.RotateEvent) error          { return nil }
-func (h *DummyEventHandler) OnTableChanged(schema string, table string) error { return nil }
+func (h *DummyEventHandler) OnTableChanged(schema string, table string,query string) error { return nil }
 func (h *DummyEventHandler) OnDDL(nextPos mysql.Position, queryEvent *replication.QueryEvent) error {
 	return nil
 }
