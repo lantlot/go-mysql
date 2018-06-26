@@ -147,7 +147,7 @@ func (c *Canal) runSyncBinlog() error {
 			force = true
 			c.ClearTableCache(schema, table)
 			log.Infof("table structure changed, clear table cache: %s.%s\n", schema, table)
-			if err = c.eventHandler.OnTableChanged(string(schema), string(table)); err != nil {
+			if err = c.eventHandler.OnTableChanged(string(schema), string(table),string(e.Query)); err != nil {
 				return errors.Trace(err)
 			}
 

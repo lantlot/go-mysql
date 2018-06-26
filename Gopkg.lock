@@ -57,6 +57,21 @@
 
 [[projects]]
   branch = "master"
+  name = "github.com/siddontang/go-mysql"
+  packages = [
+    "canal",
+    "client",
+    "driver",
+    "dump",
+    "mysql",
+    "packet",
+    "replication",
+    "schema"
+  ]
+  revision = "e59113b0edf2d547ec35e85213ad6ccde1848de9"
+
+[[projects]]
+  branch = "master"
   name = "gopkg.in/birkirb/loggers.v1"
   packages = [
     ".",
@@ -70,6 +85,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "219cbf381a410b6ce45f18380441e604972a101900a002ab6d589d3cd61311c0"
+  inputs-digest = "9541d86a8fd792d39407e35c4be383ca6d5983a5c52007f7c8f076e3010f3d15"
   solver-name = "gps-cdcl"
   solver-version = 1
